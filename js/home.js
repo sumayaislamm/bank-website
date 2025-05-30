@@ -5,6 +5,10 @@
 // step3 get the pin number
 //step4 : get the current balance
 // Step 5 : Add addmoney with balance 
+// Step06 : / String to Number
+// Step 07 : Update the balance in The Dom/UI
+
+ 
 document.getElementById('btn-add-money').addEventListener('click', function (event) {
     event.preventDefault();
     const addMoneyInput = document.getElementById('input-add-money').value;
@@ -33,4 +37,28 @@ document.getElementById('btn-add-money').addEventListener('click', function (eve
      else{
         alert('Failed, Try again!')
      }
+})
+
+
+//Cashout to the account
+
+document.getElementById('btn-cash-out').addEventListener('click', function(event){
+    event.preventDefault();
+   const amount = document.getElementById('input-cash-out').value;
+   const cashOutPin = document.getElementById('cash-out-pin').value;
+   const amountNumber = parseFloat(amount); 
+   const cashoutPinNumber = parseFloat(cashOutPin);
+
+   if(cashoutPinNumber === 1234){
+      const balance = document.getElementById('balance').innerText;
+      const balanceNumber = parseFloat(balance);
+      
+      const remainingBalance = balanceNumber - amountNumber; 
+    //   console.log(remainingBalance);
+      document.getElementById('balance').innerText = remainingBalance;
+   }
+   else{
+    alert('Something is wrong! Try again');
+   }
+
 })
