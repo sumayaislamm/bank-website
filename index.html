@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center ">
+        <div class="mockup-phone bg-base-200">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display grid place-content-center">
+
+                <div class="hero  min-h-screen text-neutral">
+                    <div class="hero-content flex-col lg:flex-row-reverse color-black">
+                        
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label font-bold ">Mobile Number</label>
+                                    <input id="phone-number" type="number" class="input required" placeholder="Enter Your Number" />
+                                    <label class="label font-bold">4 Digit Pin</label>
+                                    <input id="pin-number" type="password" class="input" placeholder="Enter 4-Digit Pin" />
+                                    <button id="button-login" class="btn btn-neutral mt-4">Login</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

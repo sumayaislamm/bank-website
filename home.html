@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone bg-base-300">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display grid place-content-center">
+                <div>
+                    <div class="stats shadow  ">
+                        <div class="stat bg-white ">
+                            <div class="stat-value">9400</div>
+                            <div class="stat-desc">Avilable Balance </div>
+                        </div>
+                    </div>
+                    <div class="w-full divider text-white "></div> 
+                    <!-- user action Button  -->
+                    <div>
+                        <button class="btn btn-lg">Add Money</button>
+                        <button class="btn btn-lg">Cash Out</button>
+                    </div>
+                    <div class="w-full divider text-white "></div>
+                    <!-- Add Money Form  -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="label">Amount</label>
+                                <input id="input-add-money" type="number" class="input" placeholder="Write Your Amount" />
+                                <label class="label">Pin</label>
+                                <input id="input-pin" type="password" class="input" placeholder="Give Your Pin" />
+                                <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <!-- Add Money form end  -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
