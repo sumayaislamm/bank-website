@@ -8,7 +8,7 @@ document.getElementById('button-login').addEventListener('click', function(event
 
     if(phoneNumber === '5' && pinNumber === '1234'){
         console.log("Login Successful");
-        window.location.href = '/Payoo-MFS-Resources/home.html';
+        window.location.href = '/home.html';
     }
     else{
         alert("Pin Or Number is wrong!")
